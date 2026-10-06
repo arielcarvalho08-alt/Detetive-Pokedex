@@ -1,0 +1,113 @@
+.titulo-tela {
+  color: #f4ebd9;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin-bottom: 20px;
+}
+
+.abas-rank {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  z-index: 10;
+}
+
+.aba-rank {
+  background: #3a2618;
+  color: #d4c3a3;
+  border: 1px solid #5a3d28;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.2s ease;
+}
+
+.aba-rank.active, .aba-rank:hover {
+  background: #8b0000;
+  color: #ffffff;
+  border-color: #ff4500;
+  transform: translateY(-3px);
+}
+
+.container-pastas {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  height: 580px;
+  margin-top: 10px;
+}
+
+.pasta-caso {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background-color: #d2b48c;
+  border: 2px solid #8b7355;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.pasta-caso:hover {
+  transform: translateY(-8px) scale(1.05) rotate(0deg) !important;
+  z-index: 100 !important;
+  box-shadow: 15px 25px 35px rgba(0, 0, 0, 0.9);
+  border-color: #8b0000;
+}
+
+.pasta-caso::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100px;
+  height: 15px;
+  background-color: #c5a378;
+  border-top: 2px solid #8b7355;
+  border-left: 2px solid #8b7355;
+  border-right: 2px solid #8b7355;
+  border-radius: 4px 4px 0 0;
+}
+
+.carimbo-confidencial {
+  border: 3px solid #8b0000;
+  color: #8b0000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  transform: rotate(-12deg);
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+
+.numero-caso {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #5c4033;
+}
+
+.titulo-caso {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #1a0f08;
+}
+
+.tag-dificuldade {
+  align-self: flex-end;
+  background: #3a2618;
+  color: #f4ebd9;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}

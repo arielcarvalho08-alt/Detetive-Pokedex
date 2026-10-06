@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detetive Pokédex - Arquivos de Casos</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-mesa">
+  <main class="mesa-investigacao">
+    
+    <a href="/" class="btn-voltar">← Voltar ao Terminal</a>
+    <h1 class="titulo-tela">MESA DE INVESTIGAÇÃO — CASOS DA CAMPANHA</h1>
+
+    <nav class="abas-rank" style="margin-top: 15px;">
+      <button class="aba-rank active" onclick="carregarCasosRank('D')">RANK D</button>
+      <button class="aba-rank" onclick="carregarCasosRank('C')">RANK C</button>
+      <button class="aba-rank" onclick="carregarCasosRank('B')">RANK B</button>
+      <button class="aba-rank" onclick="carregarCasosRank('A')">RANK A</button>
+      <button class="aba-rank" onclick="carregarCasosRank('S')">RANK S</button>
+    </nav>
+
+    <div class="container-pastas" id="container-pastas">
+      <!-- Inserido dinamicamente pelo campanha.js -->
+    </div>
+  </main>
+
+  <script src="/js/campanha.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.topo-navegacao {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  z-index: 20;
+}
+
+.espacador-topo {
+  width: 180px;
+}
+
+.area-pasta-diaria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 10;
+}
+
+.pasta-diaria-card {
+  position: relative !important;
+  width: 260px;
+  height: 360px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.pasta-diaria-card:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9) !important;
+}

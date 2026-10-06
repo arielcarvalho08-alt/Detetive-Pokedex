@@ -1,0 +1,193 @@
+.container-conclusao {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.cartao-relatorio-final {
+  background: #2b1d0c;
+  border: 3px solid #5a3d28;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 750px;
+  padding: 35px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  color: #f4ebd9;
+}
+
+.cabecalho-conclusao {
+  text-align: center;
+  border-bottom: 2px solid #5a3d28;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.cabecalho-conclusao h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #f4ebd9;
+}
+
+.badge-status {
+  display: inline-block;
+  padding: 8px 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-vitoria {
+  background: #1b4332;
+  color: #d8f3dc;
+  border: 1px solid #2d6a4f;
+}
+
+.status-derrota {
+  background: #4a0e17;
+  color: #ffccd5;
+  border: 1px solid #800f2f;
+}
+
+.corpo-conclusao {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.card-pokedex-revelacao {
+  flex: 1;
+  background: #1a110b;
+  border: 2px solid #8b7355;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex-numero {
+  color: #c5a378;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.nome-pokemon {
+  color: #ff4500;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.badges-tipo {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.badge-tipo {
+  background: #5a3d28;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.categoria-pokemon {
+  font-size: 0.85rem;
+  color: #c5a378;
+  font-style: italic;
+}
+
+.detalhes-pontuacao {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caixa-justificativa h3, .caixa-score h3 {
+  font-size: 0.85rem;
+  color: #c5a378;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+#mensagem-justificativa {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #f4ebd9;
+  background: #1a110b;
+  padding: 12px;
+  border-radius: 4px;
+  border-left: 3px solid #8b0000;
+}
+
+.caixa-score {
+  background: #1a110b;
+  border: 1px solid #5a3d28;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.caixa-score ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.caixa-score li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.rank-destaque {
+  color: #ffd700;
+}
+
+.rodape-conclusao {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  border-top: 2px solid #5a3d28;
+  padding-top: 20px;
+}
+
+.btn-conclusao {
+  padding: 12px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.btn-primario {
+  background: #1b4332;
+  color: #d8f3dc;
+  border: 1px solid #2d6a4f;
+}
+
+.btn-secundario {
+  background: #5a3d28;
+  color: #f4ebd9;
+  border: 1px solid #8b7355;
+}
+
+.btn-conclusao:hover {
+  opacity: 0.9;
+}

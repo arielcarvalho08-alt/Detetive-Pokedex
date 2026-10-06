@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detetive Pokédex - Painel de Investigação</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-mesa">
+  <main class="mesa-investigacao">
+    
+    <header class="painel-topo">
+      <a href="/campanha" class="btn-voltar-caso">← Voltar para a Mesa de Casos</a>
+      <h1 id="titulo-caso" class="titulo-caso-detalhe">A carregar caso...</h1>
+      <span id="rank-caso" class="badge-rank">RANK -</span>
+    </header>
+
+    <div class="layout-investigacao">
+      <section class="documento-pasta">
+        <div class="carimbo-topo">RELATÓRIO DE OCORRÊNCIA</div>
+        
+        <div class="secao-doc">
+          <h3>Descrição do Incidente</h3>
+          <p id="descricao-caso">A carregar detalhes do relatório...</p>
+        </div>
+
+        <div class="secao-doc">
+          <h3>Pistas Coletadas na Cena do Crime</h3>
+          <ul id="lista-pistas" class="lista-pistas">
+            <!-- Pistas dinâmicas -->
+          </ul>
+        </div>
+
+        <div class="secao-doc">
+          <h3>Depoimentos & Testemunhas</h3>
+          <div id="lista-depoimentos" class="container-depoimentos">
+            <!-- Depoimentos dinâmicos -->
+          </div>
+        </div>
+      </section>
+
+      <section class="painel-mandado">
+        <h2>MANDADO DE PRISÃO</h2>
+        <p class="instrucao-mandado">
+          Com base nas evidências levantadas, informe o nome do Pokémon responsável pelo delito para emitir a ordem de captura.
+        </p>
+
+        <form id="form-mandado" class="form-mandado">
+          <label for="input-suspeito">Nome do Pokémon Suspeito:</label>
+          <input 
+            type="text" 
+            id="input-suspeito" 
+            placeholder="Ex: Haunter, Magmar, Pikachu..." 
+            required 
+            autocomplete="off"
+          />
+
+          <button type="submit" class="btn-emitir-mandado">EXECUTAR MANDADO</button>
+        </form>
+
+      </section>
+    </div>
+
+  </main>
+
+  <script src="/js/investigacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1a110b;
+}
+
+.bg-mesa, .mesa-investigacao {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.85)), 
+              url('https://i.pinimg.com/736x/b5/d4/c3/b5d4c32e7c95f4a0ffecaeda124ceaff.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  background: #3a2618;
+  color: #f4ebd9;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #5a3d28;
+  transition: background 0.2s;
+}
+
+.btn-voltar-caso {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  background: #3a2618;
+  color: #f4ebd9;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #5a3d28;
+  transition: background 0.2s;
+}
+
+.painel-topo .btn-voltar {
+  position: static;
+  top: auto;
+  left: auto;
+}
+
+.btn-voltar:hover {
+  background: #5a3d28;
+}
+
+.btn-voltar-caso:hover {
+  background: #5a3d28;
+}
+
+.titulo-tela {
+  color: #f4ebd9;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.escondido {
+  display: none;
+}

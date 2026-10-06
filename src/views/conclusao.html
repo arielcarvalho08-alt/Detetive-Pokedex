@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detetive Pokédex - Conclusão da Investigação</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-terminal">
+  <main class="container-conclusao">
+    
+    <div class="cartao-relatorio-final">
+      
+      <header class="cabecalho-conclusao">
+        <h1 id="titulo-veredito">VEREDITO FINAL</h1>
+        <div id="badge-status-resultado" class="badge-status">---</div>
+      </header>
+
+      <div class="corpo-conclusao">
+        
+        <section class="card-pokedex-revelacao">
+          <div class="pokedex-numero" id="pokedex-num">#---</div>
+          
+          <div class="container-sprite-pokemon">
+            <img id="pokemon-sprite" src="" alt="Imagem do Pokémon" class="sprite-pokemon escondido" />
+            <div id="pokemon-loading" class="loading-sprite">Buscando foto na Pokédex...</div>
+          </div>
+
+          <h2 id="pokemon-nome" class="nome-pokemon">POKÉMON</h2>
+          <div class="badges-tipo" id="pokemon-tipos">
+            <!-- Tipos dinâmicos -->
+          </div>
+          <p class="categoria-pokemon" id="pokemon-categoria">Categoria: ---</p>
+        </section>
+
+        <section class="detalhes-pontuacao">
+          <div class="caixa-justificativa">
+            <h3>Relatório do Veredito</h3>
+            <p id="mensagem-justificativa">---</p>
+          </div>
+
+          <div class="caixa-score">
+            <h3>PONTUAÇÃO & CLASSIFICAÇÃO</h3>
+            <ul>
+              <li><span>Pontuação Base:</span> <strong id="score-base">1000 pts</strong></li>
+              <li><span>Bônus de Precisão:</span> <strong id="score-bonus">+500 pts</strong></li>
+              <li><span>Classificação Final:</span> <strong id="score-rank" class="rank-destaque">RANK A</strong></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="rodape-conclusao">
+        <a href="#" id="btn-acao-principal" class="btn-conclusao btn-primario">Próximo Caso</a>
+        <a href="/campanha" id="btn-voltar-mesa" class="btn-conclusao btn-secundario">Voltar à Mesa de Casos</a>
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script src="/js/conclusao.js"></script>
+</body>
+</html>

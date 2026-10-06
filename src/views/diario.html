@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa de Investigação - Caso Diário</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-mesa">
+  <main class="mesa-investigacao">
+    
+    <a href="/" class="btn-voltar">← Voltar ao Terminal</a>
+    <h1 class="titulo-tela">MESA DE INVESTIGAÇÃO — CASO DIÁRIO</h1>
+
+    <section class="container-pastas" style="display: flex; justify-content: center; align-items: center; height: 70vh; width: 100%;">
+      <a href="/investigacao?tipo=diario" id="link-caso-diario" class="pasta-caso" style="position: relative; width: 260px; height: 360px; text-decoration: none;">
+        <div class="carimbo-confidencial">CONFIDENCIAL</div>
+        <div>
+          <span class="numero-caso">CASO #24H</span>
+          <h2 class="titulo-caso" id="titulo-caso-diario">Ocorrência Global do Dia</h2>
+        </div>
+        <div class="tag-dificuldade">Dificuldade: Especial</div>
+      </a>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const pasta = document.getElementById("link-caso-diario");
+      if (pasta) {
+        const angulo = (Math.random() * 14 - 7).toFixed(1);
+        pasta.style.transform = `rotate(${angulo}deg)`;
+      }
+    });
+  </script>
+</body>
+</html>

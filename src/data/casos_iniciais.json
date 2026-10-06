@@ -1,0 +1,77 @@
+[
+  {
+    "numero_caso": "CASO #001",
+    "titulo": "O Rastro de Magma no Laboratório",
+    "rank": "D",
+    "is_daily": true,
+    "data_daily": "2026-10-01",
+    "dificuldade": "Fácil",
+    "tipo_layout": "planta_baixa",
+    "relatorio": "Um incidente térmico de grandes proporções destruiu a fiação elétrica do setor de pesquisas avançadas durante a madrugada. O invasor derreteu fechaduras de liga metálica reforçada e deixou marcas incandescentes no solo antes de escapar pelos dutos de ventilação.",
+    "horas_iniciais": 100,
+    "pokemon_correto": "slugma",
+    "pistas": [
+      {
+        "id_pista": "pista_1",
+        "nome": "Visão Térmica na Fiação",
+        "custo_horas": 20,
+        "descricao_revelada": "O corpo do suspeito derreteu a fiação e atinge temperaturas próximas de 10.000°C.",
+        "coordenadas_ou_alvo": "top: 30%, left: 40%"
+      },
+      {
+        "id_pista": "pista_2",
+        "nome": "Pegadas de Fluidos Viscosos",
+        "custo_horas": 15,
+        "descricao_revelada": "Não foram encontradas marcas de patas, apenas um rastro contínuo de lava espessa e viscosa.",
+        "coordenadas_ou_alvo": "top: 60%, left: 50%"
+      }
+    ],
+    "depoimentos": [
+      {
+        "testemunha": "Guarda do Turno da Noite",
+        "texto": "Vi um brilho avermelhado intenso sob a porta antes do alarme soar. O calor era insuportável mesmo a metros de distância."
+      },
+      {
+        "testemunha": "Pesquisador Chefe",
+        "texto": "Nenhum equipamento foi roubado, mas o infrator deslizou por cima da mesa principal transformando os computadores em escória derretida."
+      }
+    ]
+  },
+  {
+    "numero_caso": "CASO #002",
+    "titulo": "Documento Criptografado da Pokedex",
+    "rank": "D",
+    "is_daily": false,
+    "dificuldade": "Média",
+    "tipo_layout": "documento_secreto",
+    "relatorio": "Registros confidenciais da Pokédex regional foram corrompidos por uma presença espectral. A equipe de segurança cibernética interceptou frequências psíquicas estranhas acompanhadas por quedas súbitas e drásticas na temperatura do arquivo central.",
+    "horas_iniciais": 100,
+    "pokemon_correto": "haunter",
+    "pistas": [
+      {
+        "id_pista": "tarja_1",
+        "nome": "Decodificar Trecho da Língua",
+        "custo_horas": 25,
+        "descricao_revelada": "Diz-se que a sua língua é feita de gás e causa paralisia na vítima até a morte.",
+        "coordenadas_ou_alvo": "linha-1"
+      },
+      {
+        "id_pista": "tarja_2",
+        "nome": "Decodificar Habilidade de Sombra",
+        "custo_horas": 20,
+        "descricao_revelada": "Esconde-se na escuridão absoluta. Se você sentir um calafrio repentino, ele está por perto.",
+        "coordenadas_ou_alvo": "linha-2"
+      }
+    ],
+    "depoimentos": [
+      {
+        "testemunha": "Analista de Dados",
+        "texto": "Antes do monitor apagar, ouvi uma risada ecoando de dentro das paredes da sala dos servidores."
+      },
+      {
+        "testemunha": "Agente de Limpeza",
+        "texto": "Senti um arrepio congelante na espinha e vi uma sombra flutuante destacada contra a parede antes de perder a consciência momentaneamente."
+      }
+    ]
+  }
+]
