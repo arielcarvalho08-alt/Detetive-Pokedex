@@ -24,7 +24,7 @@ Na etapa **N1**, o foco foi construir a **base funcional da aplicação**: conex
 * 📊 **`models/Progresso.js`** — Estrutura o progresso da sessão (`session_id: "detetive_local"`), casos resolvidos/arquivados e histórico.
 * 🌱 **`seeder/`** — Limpa a coleção com `Caso.deleteMany({})` e insere os **4 casos iniciais** de layout padrão a partir de `casos_iniciais.json` com `Caso.insertMany(...)`.
 
-### 🎨 Frontend (`HTML5`, `CSS3` e `JavaScript`)
+### 🎨 Frontend (`HTML5`, `CSS3` e JavaScript`)
 * 🖥️ **Telas em `views/`** (`index.html`, `campanha.html`, `diario.html`, `caso.html`, `conclusao.html`) estilizadas com `/css/style.css`.
 * 📁 **`campanha.js`** — Busca os casos por rank via `fetch`, marca a aba ativa, distribui as pastas na mesa e navega para `/investigacao?id=...`.
 * 🔍 **`investigacao.js` e `conclusao.js`** — Carregam o caso, enviam o mandado via `POST`, salvam o retorno no `sessionStorage` (`resultado_investigacao`) e exibem o resultado na tela de conclusão.
@@ -36,3 +36,7 @@ Na etapa **N1**, o foco foi construir a **base funcional da aplicação**: conex
 1. 📦 Instale as dependências do projeto:
    ```bash
    npm install
+   ```
+2. 🔐 Crie um arquivo `.env` na raiz do projeto com a variável `MONGO_URI`.
+3. 🌱 Rode o script de seed para popular os **4 casos iniciais** no MongoDB.
+4. ▶️ Inicie o servidor Node.js e abra no navegador (ex.: `http://localhost:3000`).
